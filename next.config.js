@@ -73,14 +73,17 @@ module.exports = () => {
         },
       ]
     },
-    webpack: (config, options) => {
+    webpack: (config, { isServer }) => {
       config.module.rules.push({
         test: /\.svg$/,
         use: ['@svgr/webpack'],
       })
 
+      if (isServer) {
+        require('./scripts/generate-sitemap')
+      }
+
       return config
     },
-    output: 'standalone',
   })
 }
