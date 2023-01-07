@@ -12,7 +12,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/MattWood21/MattWoodTech-Blog',
   siteLogo: '/static/images/dnddesk.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/white_logo_color_background-twitter-card.png',
+  socialBanner: '/static/images/dnddesk.png',
   email: 'matthewjameswood21@gmail.com',
   github: 'https://github.com/MattWood21',
   twitter: 'https://twitter.com/mattwoodtech',
