@@ -1,11 +1,11 @@
 {
-  "name": "starter-blog",
-  "version": "0.0.1",
+  "name": "matt-wood-tech-blog",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "next start",
     "dev": "next dev",
-    "build": "npm run sitemap && next build && next export",
+    "build": "next build && next export",
     "postbuild": "yarn sitemap && yarn rss && yarn search",
     "sitemap": "cross-env NODE_OPTIONS='--experimental-json-modules' node -r esbuild-register ./scripts/sitemap.mjs",
     "rss": "cross-env NODE_OPTIONS='--experimental-json-modules' node -r esbuild-register ./scripts/rss.mjs",
