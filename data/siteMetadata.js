@@ -8,7 +8,7 @@ const siteMetadata = {
   description: 'Personal blog for Matt Wood and projects related to him.',
   language: 'en-us',
   theme: 'dark', // system, dark or light
-  siteUrl: 'https://blog.mattwoodtech..com',
+  siteUrl: 'https://blog.mattwoodtech.com',
   siteRepo: 'https://github.com/MattWood21/MattWoodTech-Blog',
   siteLogo: '/static/images/dnddesk.png',
   image: '/static/images/avatar.png',
