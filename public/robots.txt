@@ -1,0 +1,5 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://blog.mattwoodtech.com/sitemap.xml
