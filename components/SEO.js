@@ -28,19 +28,6 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
         rel="canonical"
         href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${router.asPath}`}
       />
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=G-J27BHL2C04`} />
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-J27BHL2C04', {
-          page_path: window.location.pathname,
-        });
-      `,
-        }}
-      />
     </Head>
   )
 }
