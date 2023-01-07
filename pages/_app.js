@@ -10,6 +10,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { Analytics } from 'pliny/analytics'
 import { SearchProvider } from 'pliny/search'
 import LayoutWrapper from '@/components/LayoutWrapper'
+import { Analytics } from '@vercel/analytics/react';
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class" defaultTheme={siteMetadata.theme}>
@@ -20,6 +21,7 @@ export default function App({ Component, pageProps }) {
       <SearchProvider searchConfig={siteMetadata.search}>
         <LayoutWrapper>
           <Component {...pageProps} />
+          <Analytics />
         </LayoutWrapper>
       </SearchProvider>
     </ThemeProvider>
