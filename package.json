@@ -4,9 +4,8 @@
   "private": true,
   "scripts": {
     "start": "next start",
-    "dev": "next dev",
-    "build": "next build && next export",
-    "postbuild": "yarn sitemap && yarn rss && yarn search",
+    "dev": "node ./scripts/generate-sitemap && next dev",
+    "build": "next build && node ./scripts/generate-sitemap",
     "sitemap": "cross-env NODE_OPTIONS='--experimental-json-modules' node -r esbuild-register ./scripts/sitemap.mjs",
     "rss": "cross-env NODE_OPTIONS='--experimental-json-modules' node -r esbuild-register ./scripts/rss.mjs",
     "search": "cross-env NODE_OPTIONS='--experimental-json-modules' node -r esbuild-register ./scripts/search.mjs",
